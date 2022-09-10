@@ -1,0 +1,41 @@
+/ Online C compiler to run C program online
+#include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node 
+{
+    int num;                        //Data of the node
+    struct node *nextptr;           //Address of the next node
+}*stnode;
+
+void createNodeList(int n); // function to create the list
+void displayList();         // function to display the list
+int main() {
+     int n;
+		printf("\n\n Linked List : To create and display Singly Linked List :\n");
+		printf("-------------------------------------------------------------\n");
+		
+    printf(" Input the number of nodes : ");
+    scanf("%d", &n);
+    createNodeList(n);
+    printf("\n Data entered in the list : \n");
+    displayList();
+    void createNodeList(int n)
+{
+    struct node *fnNode, *tmp;
+    int num, i;
+    stnode = (struct node *)malloc(sizeof(struct node));
+
+    if(stnode == NULL) //check whether the fnnode is NULL and if so no memory allocation
+    {
+        printf(" Memory can not be allocated.");
+    }
+    else
+    {
+    return 0;
+}
+    
+   
+
+    
